@@ -1,0 +1,23 @@
+
+经常有人需要顺序编译一个一个的模块,最后才连接生成可执行程序,但是如果一个模块一个模块地执行make,比较马法,下面是一个经过验证的makefile;
+
+CC = gcc
+CFLAGS = -Wall -g
+SUBDIR = a b c
+#SUBDIRS=$(shell ls -d */ | grep -v ‘bin’ | grep -v ‘lib’ | grep -v ‘include’)
+
+ELF = main
+TOPSRC=$(wildcard *.c)
+TOPOBJ=$(TOPSRC:%.c=%.o)
+SUBSRC=$(shell find $(SUBDIR) -name ‘*.c’)
+SUBOBJ=$(SUBSRC:%.c=%.o)
+
+$(ELF): $(TOPOBJ) $(SUBOBJ)
+	$(CC) $(CFLAGS) -o $(ELF) $(TOPOBJ) $(SUBOBJ)
+
+.c.o:
+	$(CC) $(CFLAGS) -c $(@D)/$(&lt;F) -o $(@D)/$(@F)
+
+clean:
+	rm $(ELF) $(TOPOBJ) $(SUBOBJ)
+	[/shell]

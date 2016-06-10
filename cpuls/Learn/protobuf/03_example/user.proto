@@ -1,0 +1,6 @@
+package user;
+message UserInfo {
+	required int64 id = 1;
+	optional string name = 2;
+	repeated bytes nick_name = 3;
+}

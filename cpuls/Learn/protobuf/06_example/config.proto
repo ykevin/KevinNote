@@ -1,0 +1,8 @@
+
+import "google/protobuf/descriptor.proto";
+
+message Configuration {
+	repeated string whitelist_urls = 1;				// allowed URLs for plugin
+	repeated string blacklist_urls = 2;
+	required google.protobuf.FileDescriptorSet wire_protocol = 3;	// compiled specification of write protocol (serialized using "protoc -o")
+}

@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC = g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS = $/;"	m
+Component	component.cpp	/^Component::Component()$/;"	f	class:Component
+Component	component.hpp	/^class Component {$/;"	c
+ConcreteComponent	component.cpp	/^ConcreteComponent::ConcreteComponent()$/;"	f	class:ConcreteComponent
+ConcreteComponent	component.hpp	/^class ConcreteComponent: public Component$/;"	c
+ConcreteDecorator	decorator.cpp	/^ConcreteDecorator::ConcreteDecorator()$/;"	f	class:ConcreteDecorator
+ConcreteDecorator	decorator.hpp	/^class ConcreteDecorator: public Decorator$/;"	c
+Decorator	decorator.cpp	/^Decorator::Decorator()$/;"	f	class:Decorator
+Decorator	decorator.hpp	/^class Decorator: public Component {$/;"	c
+EXE	Makefile	/^EXE = test$/;"	m
+LIBS	Makefile	/^LIBS = $/;"	m
+OBJS	Makefile	/^OBJS = $(patsubst %.cpp, %.o, $(SRCS))$/;"	m
+RM	Makefile	/^RM = rm$/;"	m
+RMFLAGS	Makefile	/^RMFLAGS = -rf$/;"	m
+SRCS	Makefile	/^SRCS = $(wildcard *.cpp)$/;"	m
+addBehavior	decorator.cpp	/^void ConcreteDecorator::addBehavior()$/;"	f	class:ConcreteDecorator
+mComponent	decorator.hpp	/^		Component *mComponent;$/;"	m	class:Decorator
+main	client.cpp	/^int main()$/;"	f
+operation	component.cpp	/^void ConcreteComponent::operation()$/;"	f	class:ConcreteComponent
+operation	decorator.cpp	/^void Decorator::operation()$/;"	f	class:Decorator
+setComponent	decorator.cpp	/^void Decorator::setComponent(Component *pComponent)$/;"	f	class:Decorator
+~Component	component.cpp	/^Component::~Component() $/;"	f	class:Component
+~ConcreteComponent	component.cpp	/^ConcreteComponent::~ConcreteComponent()$/;"	f	class:ConcreteComponent
+~ConcreteDecorator	decorator.cpp	/^ConcreteDecorator::~ConcreteDecorator()$/;"	f	class:ConcreteDecorator
+~Decorator	decorator.cpp	/^Decorator::~Decorator()$/;"	f	class:Decorator

@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC = g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS = $/;"	m
+ConcreteStateA	concretestateA.cpp	/^ConcreteStateA::ConcreteStateA() {}$/;"	f	class:ConcreteStateA
+ConcreteStateA	concretestateA.h	/^class ConcreteStateA: public State {$/;"	c
+ConcreteStateB	concretestateB.cpp	/^ConcreteStateB::ConcreteStateB(){}$/;"	f	class:ConcreteStateB
+ConcreteStateB	concretestateB.h	/^class ConcreteStateB : public State$/;"	c
+Context	context.cpp	/^Context::Context() $/;"	f	class:Context
+Context	context.h	/^class Context {$/;"	c
+EXE	Makefile	/^EXE = test$/;"	m
+Instance	concretestateA.cpp	/^State *ConcreteStateA::Instance()$/;"	f	class:ConcreteStateA
+Instance	concretestateB.cpp	/^State * ConcreteStateB::Instance()$/;"	f	class:ConcreteStateB
+LIBS	Makefile	/^LIBS = $/;"	m
+OBJS	Makefile	/^OBJS = $(patsubst %.cpp, %.o, $(SRCS))$/;"	m
+RM	Makefile	/^RM = rm$/;"	m
+RMFLAGS	Makefile	/^RMFLAGS = -rf$/;"	m
+SRCS	Makefile	/^SRCS = $(wildcard *.cpp)$/;"	m
+State	state.cpp	/^State::State(){$/;"	f	class:State
+State	state.h	/^class State$/;"	c
+changeState	context.cpp	/^void Context::changeState(State *st)$/;"	f	class:Context
+handle	concretestateA.cpp	/^void ConcreteStateA::handle(Context *c)$/;"	f	class:ConcreteStateA
+handle	concretestateB.cpp	/^void ConcreteStateB::handle(Context * c){$/;"	f	class:ConcreteStateB
+handle	state.cpp	/^void State::handle(Context * c){$/;"	f	class:State
+m_pState	concretestateA.h	/^		static State *m_pState;$/;"	m	class:ConcreteStateA
+m_pState	concretestateB.h	/^		static State * m_pState;$/;"	m	class:ConcreteStateB
+m_pState	context.h	/^		State *m_pState;$/;"	m	class:Context
+main	client.cpp	/^int main(int argc, char *argv[])$/;"	f
+request	context.cpp	/^void Context::request() $/;"	f	class:Context
+~ConcreteStateA	concretestateA.cpp	/^ConcreteStateA::~ConcreteStateA() {}$/;"	f	class:ConcreteStateA
+~ConcreteStateB	concretestateB.cpp	/^ConcreteStateB::~ConcreteStateB(){}$/;"	f	class:ConcreteStateB
+~Context	context.cpp	/^Context::~Context() {}$/;"	f	class:Context
+~State	state.cpp	/^State::~State(){$/;"	f	class:State

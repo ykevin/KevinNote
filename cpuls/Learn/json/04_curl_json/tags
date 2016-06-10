@@ -1,0 +1,19 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC = g++ -std=c++11$/;"	m
+CFLAGS	Makefile	/^CFLAGS = $/;"	m
+EXE	Makefile	/^EXE = test$/;"	m
+LIBS	Makefile	/^LIBS =  -lcurl -ljsoncpp$/;"	m
+OBJS	Makefile	/^OBJS = $(patsubst %.cpp, %.o, $(SRCS))$/;"	m
+RM	Makefile	/^RM = rm$/;"	m
+RMFLAGS	Makefile	/^RMFLAGS = -rf$/;"	m
+SRCS	Makefile	/^SRCS = $(wildcard *.cpp)$/;"	m
+main	curl.cpp	/^int main(void)$/;"	f
+parse_json_data	curl.cpp	/^void parse_json_data(string const &data)$/;"	f
+print_json_data	curl.cpp	/^void print_json_data(const Json::Value &val)$/;"	f
+print_json_tree	curl.cpp	/^bool print_json_tree(Json::Value const &root, int depth)$/;"	f
+receive_data	curl.cpp	/^size_t receive_data(void* buffer, size_t size, size_t nmemb, void* userp)$/;"	f

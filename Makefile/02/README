@@ -1,0 +1,7 @@
+
+
+edit src/Makefile.am
+autoscan
+mv configure.scan configure.ac
+autoreconf -fvi
+

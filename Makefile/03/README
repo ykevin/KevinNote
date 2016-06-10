@@ -1,0 +1,9 @@
+
+edit Makefile.am
+edit src/Makefile.am
+edit lib/Makefile.am
+
+autoscan
+mv configure.scan configure.ac
+autoreconf -fvi
+

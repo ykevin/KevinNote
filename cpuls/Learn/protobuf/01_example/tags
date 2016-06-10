@@ -1,0 +1,11 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+-cpp_out	Makefile	/^	protoc --cpp_out=. addressbook.proto$/;"	m
+ListPeople	list_people.cc	/^void ListPeople(const tutorial::AddressBook& address_book) {$/;"	f
+PromptForAddress	add_person.cc	/^void PromptForAddress(tutorial::Person* person) {$/;"	f
+main	add_person.cc	/^int main(int argc, char* argv[]) {$/;"	f
+main	list_people.cc	/^int main(int argc, char* argv[]) {$/;"	f

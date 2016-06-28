@@ -4,3 +4,4 @@
 * Makefile note 
 * C++ note 
 * Python note
+* OpenCV

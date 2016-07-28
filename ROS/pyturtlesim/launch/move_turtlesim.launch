@@ -1,0 +1,12 @@
+<launch>
+	<!--Start turtle  diplay -->
+	<node pkg="turtlesim" type="turtlesim_node" name="turtlesim" />
+
+	<!--Start move code -->
+	<node pkg="pyturtlesim" type="move_turtlesim.py" name="move_turtlesim" output="screen">
+		<remap from="cmd_vel" to="turtle1/cmd_vel" />
+		<param name="linear_speed" value="0.5" />
+		<param name="goal_distance" value="5" />
+	</node>
+
+</launch>
